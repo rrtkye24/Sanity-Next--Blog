@@ -18,3 +18,4 @@ export const urlFor = (source) => createImageUrlBuilder(config).image(source);
 //set up a helper function for generating image URL'S with only the asset reference data in your document
 // https://www.sanity.io/docs/image-url 
 export const useCurrentUser = createCurrentUserHook(config);
+//yess
