@@ -1,6 +1,6 @@
 export default {
     name: "comment",
-    type:"documnet",
+    type: "document",
     title: "Comment",
     fields: [
         {
@@ -8,24 +8,25 @@ export default {
             type: "string",
 
         },
-        {title: "Approved",
-      name: "approved",
-      type: "boolean",
-      description: "Comments won't show on the site without approval",  
+        {
+           title: "Approved",
+            name: "approved",
+            type: "boolean",
+            description: "Comments won't show on the site without approval",  
     },
     {
-        name:"email",
-        type: "string",
+             name:"email",
+             type: "string",
 
     },
     {
-        name:"comment",
-        type: "test",
-    },
-    {
-        name: "post",
-        type: "preference",
-        to: [{type: "post"}],
-    }
+              name:"comment",
+              type: "text",
+          },
+          {
+              name: "post",
+              type: "reference",
+              to: [{type: "post"}],
+          }
     ],
 }
